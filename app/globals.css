@@ -1,0 +1,51 @@
+@import "tailwindcss"; /* This replaces @tailwind base, components, and utilities */
+:root {
+  --brand-blue: #0066f5;
+  --brand-orange: #ff8233;
+  --text-main: #1d1d1f;
+  --text-muted: #4a4a4a;
+}
+/* In v4, you can use @theme to define custom variables that become utilities */
+@theme {
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-orange: var(--brand-orange);
+}
+body {
+  /* Use the theme variables */
+  background-color: white;
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.perspective {
+  perspective: 1000px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.perspective {
+  perspective: 1000px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
